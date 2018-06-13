@@ -61,7 +61,7 @@ def dateIsBefore(y1, m1, d1, y2, m2, d2):
         if m1 < m2:
             return True
         if m1 == m2:
-            return d1 < d2
+            return d1 <= d2
     return False        
 
 def daysBetweenDates(y1, m1, d1, y2, m2, d2):
