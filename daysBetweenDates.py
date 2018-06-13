@@ -67,7 +67,7 @@ def dateIsBefore(y1, m1, d1, y2, m2, d2):
 def daysBetweenDates(y1, m1, d1, y2, m2, d2):
     
     # program defensively! Add an assertion if date1 > date2
-    assert not dateIsBefore(y2, m2, d2, y1, m1, d1)
+    assert dateIsBefore(y1, m1, d1, y2, m2, d2)
     days = 0
     if testDayFeb(y1, m1, d1) and testDayFeb(y2, m2, d2):
         days_years = extractNLeapYears(y1, y2)
